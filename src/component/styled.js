@@ -99,10 +99,14 @@ export const Img = styled.img`
 
 export const Span = styled.span`
   display: flex;
+  -webkit-text-stroke: 0px black;
   justify-content: center
   align-items: center;
   gap 2rem;
-}
+  p{
+    font-weight: 700;
+    color: #000;
+  }
 `
 export const GridPokemon = styled.div`
     width: 95%;

@@ -48,7 +48,7 @@ function All() {
       <Container>
         <Header>
           <img src="/pokeApi.png"/>
-          <SearchBar/>
+          <SearchBar setCurrentPage={setCurrentPage}/>
         </Header>
         <Filtros>
           <Tipo setRender={renderizar}/>

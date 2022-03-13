@@ -15,7 +15,8 @@ body{
   background: linear-gradient(128deg, rgba(245,33,33,1) 0%, rgba(255,140,140,1) 50%, rgba(245,33,33,1) 100%);
 }
 .flying{
-  background-color: #BAAAFF;
+  background: rgb(186,170,255);
+background: linear-gradient(128deg, rgba(186,170,255,1) 0%, rgba(220,212,255,1) 50%, rgba(186,170,255,1) 100%);
 }
 .poison{
   border: 3px solid #6b0050;
@@ -184,4 +185,11 @@ background: linear-gradient(128deg, rgba(81,137,170,1) 0%, rgba(155,218,255,1) 5
   100%{
     transform: rotate(360deg);
   }
+}
+
+/* no delineado  */
+
+.texto-borde {
+  -webkit-text-stroke: none;
+  background-color: #ff0000;
 }

@@ -72,7 +72,7 @@ const Info =  () =>{
                     <div>
                         <div className="bgDerecha"><p>{pokemon.id}</p></div>
                         <div className="bgDerecha"><p>{pokemon.name?.toUpperCase().replaceAll("-"," ")}</p></div>
-                        <div className="bgDerecha span"> {pokemon.types?.map(e=><p key={e.type.name} >{e.type.name?.toUpperCase()}</p>)}</div>
+                        <div className="bgDerecha span"> {pokemon.types?.map(e=><p style={{border: 'none'}} className={e.type.name} key={e.type.name} >{e.type.name?.toUpperCase()}</p>)}</div>
                         <div className="bgDerecha"><p>{pokemon.weight}</p></div>
                         <div className="bgDerecha"><p>{pokemon.height}</p></div>
                     </div>
