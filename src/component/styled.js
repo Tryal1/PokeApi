@@ -76,6 +76,10 @@ export const Card = styled.div`
       -webkit-box-shadow: 1px 1px 28px -2px rgba(0,0,0,0.69);
       -moz-box-shadow: 1px 1px 28px -2px rgba(0,0,0,0.69);
     }
+    @media (max-width:768px){
+    width: 70%;
+    margin: auto;
+    }
 `
 export const CardInfo = styled.div`
   color: #FFF;
@@ -117,7 +121,7 @@ export const GridPokemon = styled.div`
     gap: 15px;
 
     @media (max-width:768px){
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
     }
 `
 
@@ -155,11 +159,8 @@ export const ContenedorInfo = styled.div`
   height: 380px;
   top: 30%;
   left: 35%;
- 
-    background: linear-gradient(to top, #f7e26c 50% ,#f1d260 50%);
-    background-size: 100% 10px;
-  
-  
+  background: linear-gradient(to top, #f7e26c 50% ,#f1d260 50%);
+  background-size: 100% 10px;
 `
 export const HeaderInfo = styled.div`
   display: flex;
@@ -356,13 +357,13 @@ export const LandingFondo = styled.div`
   background-position: center center;
   background-repeat: no-repeat;
   background-size:cover;
+  background-attachment: fixed;
   height:100vh;
-  widht:100vh;
   .imgPokemon{
     position: absolute;
     left: 35%;
     img{
-      width: 70vh;
+      width: 35vw;
     }
   }
   .start{
@@ -378,5 +379,11 @@ export const LandingFondo = styled.div`
     top: 60%;
     text-decoration: none;
   }
-  
+  @media (max-width:768px){
+    .start{
+      position: absolute;
+      left: 30%;
+      top: 60%;
+    }
+  }
 `

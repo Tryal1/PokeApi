@@ -3,6 +3,7 @@ import '../App.css'
 import { Link } from "react-router-dom"
 
 const Pokemon = ({pokemon}) =>{
+    console.log(pokemon)
     return(
         <Link to={`/${pokemon.id}`} style={{textDecoration: 'none'}}>
         <Card className={`${pokemon.types[0].type.name}`}>
