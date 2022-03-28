@@ -272,6 +272,9 @@ export const InfoDiv = styled.div`
   grid-template-columns: 30% 70%;
   margin: 0 10px;
   text-align:center;
+  justify-content: center;
+  align-items:center;
+  gap .4rem;
   
   .bgIzquierda{
     background-color:  #788186;
@@ -293,6 +296,11 @@ export const InfoDiv = styled.div`
     p{
       margin: 0;
     }
+   }
+   @media(max-width:768px){
+     .span{
+       font-size:13px;
+     }
    }
 `
 
