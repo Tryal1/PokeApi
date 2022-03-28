@@ -345,6 +345,8 @@ export const ContenidoXA = styled.div`
     display: flex;
     gap: 3rem;
     justify-content: center;
+    align-items:center;
+    width: -webkit-fill-available;
   }
   .bg{
     p{
@@ -364,7 +366,7 @@ export const ContenidoXA = styled.div`
   .bgd{
     background-color: rgba(255, 255, 255, 0.671);
     border-radius: 5px;
-    width: 120px;
+    width: -webkit-fill-available;
   }
   @media(max-width:768px){
     .bg{

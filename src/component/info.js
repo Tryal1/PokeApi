@@ -3,7 +3,7 @@ import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 import { getDataPokemon } from "../reducer/action"
-import { DivGeneral,StatDiv,XpAbility,ContenidoXA,ContenedorInfo,HeaderInfo,ContenidoInfo,InfoDiv,InfoImagen} from "./styled"
+import { DivGeneral,StatDiv,XpAbility,ContenidoXA,ContenedorInfo,HeaderInfo,ContenidoInfo,InfoDiv,InfoImagen, Loading} from "./styled"
 
 const Info =  () =>{
     const color1 = useRef();
@@ -36,11 +36,14 @@ const Info =  () =>{
     }
     
    if(pokemon.id !== Number(id)){
-       return(
-           <div>
-               loading...
-           </div>
-       )
+    return(
+        <Loading>
+            <div className="wrapper">
+            <div className="pokeball">
+            </div>
+            </div>       
+        </Loading>
+    )
    }
 
     return(
