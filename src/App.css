@@ -98,9 +98,10 @@ background: linear-gradient(128deg, rgba(81,137,170,1) 0%, rgba(155,218,255,1) 5
 }
 
 .pagination {
-  margin: 15px auto;
   display: flex;
   list-style: none;
+  justify-content: center;
+  padding: 0;
   outline: none;
 }
 .pagination > .active > a{

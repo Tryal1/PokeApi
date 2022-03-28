@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch, } from "react-redux";
 import  { filtroPoke} from "../reducer/action";
-import { Button, Input } from "./styled"; 
+import { Button, Input,SearhDiv} from "./styled"; 
 
 const SearchBar = ({setCurrentPage}) =>{
     const [filter,setFilter] = useState({search:''})
@@ -22,10 +22,10 @@ const SearchBar = ({setCurrentPage}) =>{
     },[dispatch])
 
     return(
-        <div>
+        <SearhDiv>
             <Input onChange={onChange} />
             <Button onClick={handleSearch}>Buscar</Button>
-        </div>
+        </SearhDiv>
     )
 }
 

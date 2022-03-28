@@ -3,7 +3,7 @@ import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 import { getDataPokemon } from "../reducer/action"
-import { StatDiv,XpAbility,ContenidoXA,ContenedorInfo,HeaderInfo,ContenidoInfo,InfoDiv,InfoImagen} from "./styled"
+import { DivGeneral,StatDiv,XpAbility,ContenidoXA,ContenedorInfo,HeaderInfo,ContenidoInfo,InfoDiv,InfoImagen} from "./styled"
 
 const Info =  () =>{
     const color1 = useRef();
@@ -44,6 +44,7 @@ const Info =  () =>{
    }
 
     return(
+        <DivGeneral>
         <ContenedorInfo>
             <HeaderInfo>
                 <div ref={color2} className="div2">
@@ -107,6 +108,7 @@ const Info =  () =>{
                 </ContenidoXA>
             </XpAbility>
         </ContenedorInfo>
+        </DivGeneral>
     )
 }
 //<p><Span>{pokemon.abilities.map(e=><P key={e.ability.name}>{e.ability.name.replace("-"," ")}</P>)}</Span></p>

@@ -49,17 +49,14 @@ export const Button = styled.button`
   }
 `
 
-export const FiltrosContainer = styled.div`
-  width: 40%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  
-  select {
-    text-align:center;
-    border-radius: 10px;  
-    padding: 5px 8px;
-    appearance: none;
+export const SearhDiv = styled.div`
+  @media (max-width:768px){
+    Input{
+      width:70%;
+    }
+    Button{
+      width:30%;
+    }
   }
 `
 
@@ -144,23 +141,48 @@ export const Input = styled.input`
   }
 `
 
+//Filtro
 export const Filtros = styled.div`
   background-color: #FFF;
   padding: 1rem 0;
   border-radius: 10px;
 `
 
+export const FiltrosContainer = styled.div`
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  
+  select {
+    text-align:center;
+    border-radius: 10px;  
+    padding: 5px 8px;
+    appearance: none;
+  }
+`
+
+
 //Info
 //top 50% - (40%/2) = 50% - 20% = 30% 
 //left 50% - (30%/2) = 50% - 15% = 35% 
+export const DivGeneral = styled.div`
+ display: flex;
+ justify-content:center;
+ align-items:center;
+ margin: 300px 0;
+ @media(max-width:768px){
+  padding: 0 10px;
+ }
+`
+
 export const ContenedorInfo = styled.div`
-  position:absolute;
+  position: relative;
   width: 575px;
   height: 380px;
-  top: 30%;
-  left: 35%;
   background: linear-gradient(to top, #f7e26c 50% ,#f1d260 50%);
   background-size: 100% 10px;
+  @media (max-width:768px){
+  }
 `
 export const HeaderInfo = styled.div`
   display: flex;
@@ -198,20 +220,20 @@ export const HeaderInfo = styled.div`
   }
   a{
     position: absolute;
-    left: 450px;
+    left: 70%;
     color: #fff;
     text-decoration: none;
   }
   .pokeInfo{
     position: absolute;
-    left: 250px;
+    left: 43%;
     padding: 10px 8px;
     border-radius: 5px;
     border: none;
   }
   .pokeStats{
     position: absolute;
-    left: 300px;
+    left: 53%;
     padding: 10px 8px;
     border-radius: 5px;
     border: none;
@@ -293,7 +315,6 @@ export const InfoImagen = styled.div`
     border: 3px solid #8e8e8e;
     margin-bottom: 5px;
   }
-
 `
 
 export const XpAbility =styled.div`
