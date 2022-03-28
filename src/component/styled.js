@@ -181,8 +181,6 @@ export const ContenedorInfo = styled.div`
   height: 380px;
   background: linear-gradient(to top, #f7e26c 50% ,#f1d260 50%);
   background-size: 100% 10px;
-  @media (max-width:768px){
-  }
 `
 export const HeaderInfo = styled.div`
   display: flex;
@@ -242,8 +240,9 @@ export const HeaderInfo = styled.div`
 export const ContenidoInfo = styled.div`
   border: 3px solid #8e8e8e;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: 45% 55%;
   justify-items: stretch;
+  height:64%;
 `
 
 export const StatDiv = styled.div`
@@ -315,6 +314,12 @@ export const InfoImagen = styled.div`
     border: 3px solid #8e8e8e;
     margin-bottom: 5px;
   }
+ @media(max-width:768px){
+   img{
+    width: 150px;
+    height: 160px;
+   }
+ }
 `
 
 export const XpAbility =styled.div`
@@ -323,7 +328,11 @@ font-size: 14px;
  border-top: none;
  display: grid;
  grid-template-rows: repeat(2,1fr);
-
+ @media(max-width:768px){
+    font-size: 12px;
+    height: 25%;
+  }
+}
 `
 
 export const ContenidoXA = styled.div`
@@ -336,7 +345,6 @@ export const ContenidoXA = styled.div`
     display: flex;
     gap: 3rem;
     justify-content: center;
-    align-items: center;
   }
   .bg{
     p{
@@ -357,10 +365,20 @@ export const ContenidoXA = styled.div`
     background-color: rgba(255, 255, 255, 0.671);
     border-radius: 5px;
     width: 120px;
-    p{
-
-    }
   }
+  @media(max-width:768px){
+    .bg{
+      P{
+        font-size:11px;
+        -webkit-text-stroke:0;
+        margin-top:-3px;
+      }
+      width:100%;
+      }
+    }
+    .bgd{
+      width: 100%;
+    }
 `
 //Loading
 

@@ -49,7 +49,7 @@ const Info =  () =>{
             <HeaderInfo>
                 <div ref={color2} className="div2">
                     <div ref={color1} className="div1 color"> 
-                        {page === 1? <h3>Pokemon details</h3>:<h3>Pokemon Stats</h3>}
+                        {page === 1? <h3>Details</h3>:<h3>Stats</h3>}
                         <button className="pokeInfo" onClick={pokeInfo}></button>
                         <button className="pokeStats" onClick={pokeStats}></button>
                         <Link to={'/pokemon'}>Back</Link>      

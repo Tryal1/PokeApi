@@ -60,7 +60,7 @@ function All() {
                 breakLabel={"..."}
                 breakClassName={"break-me"}
                 pageCount={totalPage}
-                marginPagesDisplayed={2}
+                marginPagesDisplayed={1}
                 pageRangeDisplayed={2}
                 onPageChange={handlePageClick}
                 containerClassName={"pagination"}
